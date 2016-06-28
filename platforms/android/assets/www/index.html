@@ -32,12 +32,13 @@
     </ion-header-bar>
     <ion-content>
 
+      <label>Search: <input ng-model="searchText"></label>
       <div class="card" ng-controller="AmbilDataController">
-        <div class="item item-text-wrap" ng-repeat="d in dataPasien "  >
+        <div class="item item-text-wrap" ng-repeat="d in dataPasien  |  filter:searchText ">
 
-            <p>Lokasi Awal : {{d.id_himpunan}}</p>
-            <p>Lokasi Akhir : {{d.batas_atas}}</p>
-            <p>Email Penumpang : {{d.batas_bawah}}</p>
+          <p>Lokasi Awal : {{d.id_himpunan}}</p>
+          <p>Lokasi Akhir : {{d.batas_atas}}</p>
+          <p>Email Penumpang : {{d.batas_bawah}}</p>
 
 
         </div>

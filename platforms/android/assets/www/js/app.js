@@ -25,7 +25,7 @@ angular.module('Aplikasi-Klinsana', ['ionic'])
 
   .controller('AmbilDataController', ['$scope', 'AmbilDataService', '$window', '$ionicPopup', function($scope, AmbilDataService, $window, $ionicPopup) {
 
-    $scope.dataPesanSupir = [];
+    //    $scope.dataPesanSupir = [];
 
     function ambilDataRumahSakit() {
       AmbilDataService.ambilDataPesanan().success(function(data) {

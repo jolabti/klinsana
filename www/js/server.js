@@ -3,7 +3,7 @@ angular.module('Aplikasi-Klinsana')
   .factory('AmbilDataService', ['$http', function($http) {
 
     //var baseUrl = 'http://10.42.0.1/Aplikasi-Supir-Server/index.php';
-    var baseUrl = 'http://192.168.54.46/myskripsi/index.php';
+    var baseUrl = 'http://192.168.1.14/myskripsi/index.php';
 
     return {
       ambilDataPesanan: function() {
